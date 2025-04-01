@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #3c1f17, #7d4b3c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dk-dn-container {
+    width: 350px;
+    padding: 30px;
+    background: #3c1f17;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.dk-dn-container img {
+    width: 70%;
+    margin-bottom: 10px;
+
+}
+
+.dk-dn-container h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #7e4b36;
+    font-size: 16px;
+    color: #3c1f17;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #7d4b3c;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e3826;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.dk-dn-container p {
+    margin-top: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.dk-dn-container p a {
+    color: #ffa500; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
