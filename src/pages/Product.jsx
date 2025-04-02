@@ -42,8 +42,7 @@ const Product = () => {
     };
 
     return (
-        <div>
-            <h1>Danh sách sản phẩm</h1>
+        <div >
             <form onSubmit={handleSearch} className="search-form">
                 <input
                     type="text"
@@ -62,7 +61,7 @@ const Product = () => {
                             <h2>{product.product_name}</h2>
                             <div className="product-price">{product.price} VND</div>
                             <Link to={`/product-edit/${product.product_id}`} className="detail-button">Edit</Link>
-                            <button onClick={() => handleDelete(product.product_id)} className="detail-button">Delete</button>
+                            <Link onClick={() => handleDelete(product.product_id)} className="detail-button">Delete</Link>
                             <Link to={`/product-detail/${product.product_id}`} className="detail-button">View</Link>
                         </div>
                     ))

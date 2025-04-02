@@ -31,7 +31,6 @@ const Cart = () => {
 
   return (
     <div>
-      <h1>Danh Sách Giỏ Hàng Của Các Khách Hàng</h1>
       {cartItems.length > 0 ? (
         <div className="cart-list-wrapper">
           {cartItems.map((item) => (

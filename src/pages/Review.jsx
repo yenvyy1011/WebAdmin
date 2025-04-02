@@ -24,6 +24,7 @@ const Review = () => {
       description: "Nhân kem béo ngậy, rất thích!",
       created_at: "2025-03-28",
     },
+    
   ]);
 
   const handleDelete = (id) => {
@@ -34,7 +35,6 @@ const Review = () => {
 
   return (
     <div className="review-container">
-      <h1>Danh sách đánh giá</h1>
       <div className="reviews-grid">
         {reviews.length > 0 ? (
           reviews.map((review) => (

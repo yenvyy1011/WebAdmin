@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"; // Thêm dòng này
 
 
 const Order = () => {
+  const navigate = useNavigate(); // Khai báo useNavigate
   // Dữ liệu giả
   const [orders, setOrders] = useState([
     {
@@ -49,6 +50,7 @@ const Order = () => {
       payment: "Tiền mặt",
       status: "Hủy bỏ",
     },
+    
   ]);
 
   const [filterStatus, setFilterStatus] = useState("");
@@ -78,8 +80,6 @@ const Order = () => {
 
   return (
     <div className="order-container">
-      <h1>Danh sách đơn hàng</h1>
-
       {/* Bộ lọc trạng thái */}
       <div className="filter-form">
         <label htmlFor="status">Lọc theo trạng thái:</label>

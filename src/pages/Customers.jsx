@@ -42,7 +42,6 @@ const Customers = () => {
 
   return (
     <div className="user-container">
-      <h1>Danh sách khách hàng</h1>
       <table className="user-table">
         <thead>
           <tr>

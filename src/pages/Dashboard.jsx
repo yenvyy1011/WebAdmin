@@ -113,7 +113,7 @@ const AdminDashboard = () => {
           <div className="stats-box">
             <p>{statistics.orders}</p>
             <h3>Đơn hàng</h3>
-            <a href="/order-list" className="btn-view">Xem chi tiết</a>
+            <a href="/orders" className="btn-view">Xem chi tiết</a>
           </div>
           <div className="stats-box">
             <p>{statistics.products}</p>

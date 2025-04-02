@@ -19,7 +19,6 @@ const Category = () => {
 
   return (
     <div className="category-container">
-      <h1 className="category-title">Danh mục sản phẩm</h1>
 
       <button onClick={() => navigate("/add-category")} className="category-btn-primary">
         Thêm danh mục mới
